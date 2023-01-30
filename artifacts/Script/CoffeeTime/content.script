@@ -1,0 +1,105 @@
+//var names = ["Bob", "Mary", "Joe", "Sally", "Jane", "John"];
+
+var names = ["John", "Paul", "George", "Ringo", "Fred", "Wilma", "Barney", "Betty", "BamBam", "Pebbles", "Dino", "Hoppy", "Bugs", "Daffy", "Elmer", "Porky", "Tweety", "Sylvester", "Granny", "Roadrunner"];
+
+console.log(names)
+
+var outputOfPairs = []
+
+function pair(names) {
+  var namesCopy = names.slice();
+  var pair = [];
+  var randomIndex = Math.floor(Math.random() * namesCopy.length);
+  pair.push(namesCopy[randomIndex]);
+  namesCopy.splice(randomIndex, 1);
+  randomIndex = Math.floor(Math.random() * namesCopy.length);
+  pair.push(namesCopy[randomIndex]);
+  namesCopy.splice(randomIndex, 1);
+  return pair;
+}
+
+// var numberOfPeople = names.length
+
+
+    var newPair = pair(names)
+    var newPairStringy = JSON.stringify(newPair)
+    var newPairStringyLess = newPairStringy.substring(1, newPairStringy.length-1);
+    console.log("newPairStringyLess")
+    console.log(newPairStringyLess)
+
+    var theTwoNamesArray = newPairStringyLess.split(',')
+
+//var name1 = theTwoNamesArray[0].replace(/"/g, "'");
+var name1 = theTwoNamesArray[0]
+console.log("name1");
+console.log(name1);
+
+//var name2 = theTwoNamesArray[1].replace(/"/g, "'");
+var name2 = theTwoNamesArray[1]
+console.log(name2);
+
+
+// names = names.filter(e => e !== name1);
+// names = names.filter(e => e !== name2);
+
+// var index = names.indexOf(name1);
+// console.log("index")
+// console.log(index)
+// if (index !== -1) {
+//   names.splice(index, 1);
+// }
+
+
+
+// var filteredArray = names.filter(function(e) { return e !== name1 })
+// console.log("filteredArray")
+// console.log(filteredArray)
+
+
+//names.indexOf('George') !== -1 && names.splice(names.indexOf('George'), 1)
+
+// var stringyifedName1 = JSON.stringify(name1)
+// names.indexOf(stringyifedName1) !== -1 && names.splice(names.indexOf(stringyifedName1), 1)
+// console.log("stringyifedName1")
+// console.log(stringyifedName1)
+
+names.indexOf(name1) !== -1 && names.splice(names.indexOf(name1), 1)
+
+
+
+console.log("-----")
+console.log(names)
+
+
+
+
+// ----------------------
+
+
+// var halfThePeople = numberOfPeople / 2
+
+// for (i = 0; outputOfPairs.length < halfThePeople; i++) {
+
+//     var newPair = pair(names)
+//     var newPairStringy = JSON.stringify(newPair)
+//     var newPairStringyLess = newPairStringy.substring(1, newPairStringy.length-1);
+
+//     console.log("newPairStringy")
+//     console.log(newPairStringyLess)
+    
+//     var newPairStringySplit = newPairStringyLess.split(',')
+//     var theOtherWay = newPairStringySplit[1] + "," +newPairStringySplit[0]
+//     console.log("theOtherWay")
+//     console.log(theOtherWay)
+
+//     if (outputOfPairs.includes(newPairStringy)){
+//         // Skip
+//         console.log("Skipping...")
+//     } else {
+//         outputOfPairs.push(newPairStringy)
+//     }
+    
+// }
+
+// console.log("--- Output ---")
+// console.log(outputOfPairs)

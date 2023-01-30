@@ -1,0 +1,20 @@
+{
+	"id": "376fd844-699a-ed11-994c-000d3a66eaa0",
+	"createdAt": "2023-01-22T15:27:32.950Z",
+	"createdBy": "lloyd.trevarthen@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "CoffeeTime",
+	"ver": "23.1.22.1613",
+	"description": null,
+	"content": "file:///content.script",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "366fd844-699a-ed11-994c-000d3a66eaa0",
+	"package": "07d276d9-3599-4fb0-8b3b-65a908201234"
+}

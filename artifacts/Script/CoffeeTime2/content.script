@@ -1,0 +1,29 @@
+// Define names
+var names = ["John", "Paul", "George", "Ringo", "Fred", "Wilma", "Barney", "Betty", "BamBam", "Pebbles", "Dino", "Hoppy", "Bugs", "Daffy", "Elmer", "Porky", "Tweety", "Sylvester", "Granny", "Roadrunner"];
+
+// Function to shuffle array
+const shuffle = (arr) => {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
+const randomNames = shuffle(names);
+
+// Match each person with the next one, folding over at the end
+const matches = randomNames.map((name, index) => {
+  return {
+    a: name,
+    b: randomNames[index + 1] || randomNames[0],
+  }
+});
+
+var res = matches.filter(function(v, i) {
+  // check the index is odd
+  return i % 2 == 0;
+});
+
+console.log(res);
+

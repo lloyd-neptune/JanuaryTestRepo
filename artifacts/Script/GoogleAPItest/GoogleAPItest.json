@@ -1,0 +1,27 @@
+{
+	"id": "f745522a-7f9d-ed11-994c-000d3a66eaa0",
+	"createdAt": "2023-01-26T13:41:42.480Z",
+	"createdBy": "lloyd.trevarthen@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [
+		{
+			"id": "D9FC6610-7F9D-ED11-994C-000D3A66EAA0",
+			"name": "@googleapis/docs",
+			"contextname": "googleapisdocs",
+			"path": "/home/planet9/ext-disk/npm-serverscript/node_modules/@googleapis/docs"
+		}
+	],
+	"entitySets": [],
+	"apis": [],
+	"name": "GoogleAPItest",
+	"ver": "23.1.26.1349",
+	"description": null,
+	"content": "file:///content.script",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "366fd844-699a-ed11-994c-000d3a66eaa0",
+	"package": "07d276d9-3599-4fb0-8b3b-65a908201234"
+}

@@ -1,0 +1,76 @@
+var google = modules.googleapisdocs
+//console.log(google)
+
+const docs = google.docs('v1');
+
+
+async function main() {
+  const auth = new google.auth.GoogleAuth({
+    // Scopes can be specified either as an array or as a single, space-delimited string.
+    scopes: [
+      'https://www.googleapis.com/auth/documents',
+      'https://www.googleapis.com/auth/drive',
+      'https://www.googleapis.com/auth/drive.file',
+    ],
+  });
+
+  console.log("auth")
+  console.log(auth)
+
+  // Acquire an auth client, and bind it to all future calls
+  const authClient = await auth.getClient();
+  google.options({auth: authClient});
+
+  // Do the magic
+  const res = await docs.documents.create({
+    // Request body metadata
+    requestBody: {
+      // request body parameters
+      // {
+      //   "body": {},
+      //   "documentId": "my_documentId",
+      //   "documentStyle": {},
+      //   "footers": {},
+      //   "footnotes": {},
+      //   "headers": {},
+      //   "inlineObjects": {},
+      //   "lists": {},
+      //   "namedRanges": {},
+      //   "namedStyles": {},
+      //   "positionedObjects": {},
+      //   "revisionId": "my_revisionId",
+      //   "suggestedDocumentStyleChanges": {},
+      //   "suggestedNamedStylesChanges": {},
+      //   "suggestionsViewMode": "my_suggestionsViewMode",
+      //   "title": "my_title"
+      // }
+    },
+  });
+
+  console.log(res.data);
+
+  // Example response
+  // {
+  //   "body": {},
+  //   "documentId": "my_documentId",
+  //   "documentStyle": {},
+  //   "footers": {},
+  //   "footnotes": {},
+  //   "headers": {},
+  //   "inlineObjects": {},
+  //   "lists": {},
+  //   "namedRanges": {},
+  //   "namedStyles": {},
+  //   "positionedObjects": {},
+  //   "revisionId": "my_revisionId",
+  //   "suggestedDocumentStyleChanges": {},
+  //   "suggestedNamedStylesChanges": {},
+  //   "suggestionsViewMode": "my_suggestionsViewMode",
+  //   "title": "my_title"
+  // }
+}
+
+await main()
+
+
+complete()

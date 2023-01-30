@@ -20,8 +20,30 @@
 			"description": "Country"
 		}
 	],
-	"jsclass": [],
-	"jsscript_group": [],
+	"jsclass": [
+		{
+			"id": "f745522a-7f9d-ed11-994c-000d3a66eaa0",
+			"name": "GoogleAPItest",
+			"description": null
+		},
+		{
+			"id": "3a9b1fdb-6f9a-ed11-994c-000d3a66eaa0",
+			"name": "CoffeeTime2",
+			"description": null
+		},
+		{
+			"id": "376fd844-699a-ed11-994c-000d3a66eaa0",
+			"name": "CoffeeTime",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "366fd844-699a-ed11-994c-000d3a66eaa0",
+			"name": "LloydTestPad",
+			"description": null
+		}
+	],
 	"theme": [],
 	"pdf": [],
 	"rulesengine": [],
