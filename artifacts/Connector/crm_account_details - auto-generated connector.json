@@ -1,0 +1,16 @@
+{
+	"id": "9d2bb919-9cc4-ec11-997e-0050f2c33e69",
+	"createdAt": "2022-04-25T13:32:08.246Z",
+	"createdBy": "lloyd",
+	"settings": {
+		"tableid": "1e37c246-1240-420f-bb42-60f8a477c905"
+	},
+	"documentation": [],
+	"name": "crm_account_details - auto-generated connector",
+	"description": " - auto-generated connector",
+	"group": null,
+	"type": "T",
+	"ver": "22.4.25.1332",
+	"disabled": false,
+	"package": "07d276d9-3599-4fb0-8b3b-65a908201234"
+}
